@@ -18,9 +18,9 @@ h1, h2, p {
   text-align: center;
 }
 
-.form  input {
-  padding: 8px;
-  margin: 10px 5px;
+.form input {
+  padding: 10px;
+  margin: 10px;
 }
 
 .card {
@@ -28,11 +28,31 @@ h1, h2, p {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  border: 1px solid;
-  border-radius: 5%;
-  padding: 2px;
+  padding: 30px;
+  margin: 5px 0;
+}
+
+.error {
+  font-weight: bolder;
+  color: red;
 }
 
 .card img {
   margin: 20px 0;
+  border: 3px solid #dddddd;
+  border-radius: 2%;
+}
+
+@media (max-width: 600px)
+{
+  .form input, button
+    {
+      width: 70%;
+    }
+  .form
+    {
+      display: flex;
+      flex-direction:column;
+      align-items:center;
+    }
 }
